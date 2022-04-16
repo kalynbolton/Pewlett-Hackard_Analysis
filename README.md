@@ -11,3 +11,6 @@ The purpose of this project was to use PostgresSQL and pgAdmin to determine the 
 ![D2table](https://user-images.githubusercontent.com/97268254/163689199-57f7982f-8478-47c9-b02b-a2e2d65f80fa.PNG)
 
 ## Summary
+As one could guess from its name, the "silver tsunami" is going to have a large impact on the company. There are a total of 41,382 jobs that will need to be filled.
+
+According to my queries, there are not nearly enough qualified, retirement-ready employees in the departments to mentor the next generation of employees.
