@@ -196,4 +196,23 @@ INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no);
 
 -- 7.3.6 Create tailored lists
--- 7.3.6 Create tailored lists
+-- only relevant information to the sales team 
+SELECT di.emp_no,
+	di.first_name,
+	di.last_name,
+	di.dept_name
+INTO sales_dept
+FROM dept_info as di
+WHERE (di.dept_name = 'Sales');
+
+-- only relevant information for sales ans department team using IN clause 
+SELECT di.emp_no,
+	di.first_name,
+	di.last_name,
+	di.dept_name
+INTO sales_dvlpm_info
+FROM dept_info as di
+WHERE di.dept_name IN ('Sales', 'Development');
+
+-- check for table confirm
+SELECT * FROM sales_dvlpm_info;
